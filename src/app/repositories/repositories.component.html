@@ -1,0 +1,26 @@
+<main>
+  <p>repositories works!</p>
+
+  <input
+    type="text"
+    [(ngModel)]="inputValue"
+    placeholder="Digite aqui"
+    name="search"
+  />
+  <button (click)="listRepositories()">pesquisar</button>
+
+  <ul *ngIf="repositories">
+
+    <p>{{totalResults}}</p>
+    <li *ngFor="let repositorio of repositories">
+      <a href="{{ repositorio.html_url }}" target="_blank">{{
+        repositorio.full_name
+      }}</a>
+      <p>{{ repositorio.description }}</p>
+      <p>{{ repositorio.topics.join(" ") }}</p>
+      <p>{{ repositorio.stargazers_count }}</p>
+      <p>{{ repositorio.watchers_count }}</p>
+      <p>{{ repositorio.open_issues }}</p>
+    </li>
+  </ul>
+</main>
