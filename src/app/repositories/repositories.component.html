@@ -1,26 +1,39 @@
-<main>
-  <p>repositories works!</p>
+<main class="container__main">
+  <section class="container__search">
+    <input
+      type="text"
+      [(ngModel)]="inputValue"
+      placeholder="Type here"
+      name="search"
+    />
+    <button class="btn__search" (click)="listRepositories()">Search</button>
+  </section>
+  <section class="container__repositories">
+    <ul class="repositories">
+      <h3>1345703 repository results</h3>
+      <li>
+        <div class="repositorie_icon__container">
+          <img src="../../assets/img/repositorie.svg" alt="repositorie">
+          <a href="#" target="_blank">nodejs/node</a>
+        </div>
+        <div class="container__description_stacks">
 
-  <input
-    type="text"
-    [(ngModel)]="inputValue"
-    placeholder="Digite aqui"
-    name="search"
-  />
-  <button (click)="listRepositories()">pesquisar</button>
+          <p>Node.js JavaScript runtime :sparkles::turtle::rocket::sparkles:</p>
+          <p>javascript js linux macos mit node nodejs runtime windows</p>
+        </div>
+        <div class="statics">
+          <img src="../../assets/img/star.svg" alt="star">
+          <p>88354</p>
+          <p>JavaScript</p>
+          <p>1635</p>
+        </div>
+      </li>
+    </ul>
+  </section>
 
-  <ul *ngIf="repositories">
-
-    <p>{{totalResults}}</p>
-    <li *ngFor="let repositorio of repositories">
-      <a href="{{ repositorio.html_url }}" target="_blank">{{
-        repositorio.full_name
-      }}</a>
-      <p>{{ repositorio.description }}</p>
-      <p>{{ repositorio.topics.join(" ") }}</p>
-      <p>{{ repositorio.stargazers_count }}</p>
-      <p>{{ repositorio.watchers_count }}</p>
-      <p>{{ repositorio.open_issues }}</p>
-    </li>
-  </ul>
+  <div class="container__btn_prev_next">
+    <button (click)="previous()">Previous</button>
+    <p>{{ count }}</p>
+    <button (click)="next()">Next</button>
+  </div>
 </main>
