@@ -6,10 +6,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { RepositoriesComponent } from './repositories/repositories.component';
 import { GithubService } from './github.service';
 import { HeaderComponent } from './header/header.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
-  declarations: [AppComponent, RepositoriesComponent, HeaderComponent],
+  declarations: [AppComponent, RepositoriesComponent, HeaderComponent, FooterComponent],
   imports: [BrowserModule, HttpClientModule,FormsModule],
   providers: [HttpClientModule,GithubService],
   bootstrap: [AppComponent],
