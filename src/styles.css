@@ -1,1 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400;600&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  background-color: rgb(13,17,23);
+  font-family: 'Work Sans', sans-serif;
+}
