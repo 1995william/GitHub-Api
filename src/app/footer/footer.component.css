@@ -1,5 +1,5 @@
 .container__footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   padding: 1rem;
   width: 100%;
