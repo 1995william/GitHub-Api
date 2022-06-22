@@ -32,7 +32,7 @@ export class RepositoriesComponent implements OnInit {
     this.githubService
       .getData(this.inputValue, this.count)
       .subscribe((repo) => {
-        this.totalResults = `${repo.total_count} Resultados`;
+        this.totalResults = `${repo.total_count} repository results`;
         this.repositories = repo.items;
 
         console.log(this.repositories);
