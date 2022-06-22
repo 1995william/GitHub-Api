@@ -8,11 +8,8 @@ import { Observable } from 'rxjs';
 export class GithubService {
   constructor(private http: HttpClient) {}
 
-
-
-
-  getData(input:string | undefined): Observable<any> {
-    const url = `https://api.github.com/search/repositories?q=${input}`;
+  getData(input: string | undefined, count: number): Observable<any> {
+    const url = `https://api.github.com/search/repositories?q=${input}&page=${count}&per_page=10`;
 
     return this.http.get<any>(url);
   }
