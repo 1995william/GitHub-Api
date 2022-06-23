@@ -1,27 +1,72 @@
 # FieldControlChallengeFront
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+<div>
+   <h2 align="center" style="font-size: 25px;margin-bottom: 2rem;">GitHub Api</h2>
+   <div align="center">
+    <img style="width: 100px;" src="./public/github.svg" alt="logo"/>
+   </div>
+</div>
 
-## Development server
+# Descrição
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<div style="margin-bottom:2rem;">
 
-## Code scaffolding
+<p style="font-size: 15px">O projeto FieldControl Challenge Front tem como objetivo o desenvolvimento de uma aplicação em Angular 14.0.2 que utilize endpoint da API do github.</p>
+</div>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Layout
 
-## Build
+|        💻 Desktop         |        📱 Mobile         |
+| :-----------------------: | :----------------------: |
+| ![](./public/desktop.png) | ![](./public/mobile.png) |
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Utilização
 
-## Running unit tests
+<p style="font-size: 15px">É possível você utilizar o projeto seguindos estes passos:</p>
+<p style="font-size: 15px">Utilize o Git Clone no repositório em uma pasta de sua escolha</p>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
+$ git clone https://github.com/1995william/GitHub-Api.git
+```
 
-## Running end-to-end tests
+<p style="font-size: 15px">Execute o comando a seguir no terminal para instalar as dependências</p>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+$ npm i
+ou
+$ npm install
+```
 
-## Further help
+<p style="font-size: 15px">Para executar o projeto digite</p>
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+$ ng serve
+```
+
+## ou
+
+<p style="font-size: 20px; "><strong>Para acessar o deploy da aplicação:</strong> <a href="http://git-hub-api-kappa.vercel.app/" target="_blank" style="font-size: 20px">clique aqui!</a></p>
+
+<p style="font-size: 15px">Para executar os testes unitários</p>
+
+```
+$ ng test
+```
+
+# Tecnologias e ferramentas utilizadas
+
+<div >
+<ul>
+<li>Node</li>
+<li>CSS</li>
+<li>Angular</li>
+<li>TypeScript</li>
+<li>Jasmine</li>
+
+</ul>
+
+</div>
+
+# Desenvolvedor
+
+<p style="font-size: 15px">Rodrigo William</p>
