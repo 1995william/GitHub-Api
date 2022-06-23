@@ -1,0 +1,115 @@
+.container__main {
+  margin: 8rem auto;
+  max-width: 75rem;
+}
+.container__main h1 {
+  color: rgb(240,246,252);
+}
+.container__search {
+  display: flex;
+  padding: 2rem 0;
+}
+.container__search input {
+  min-width: 25rem;
+  font-size: 1rem;
+  border: 1px solid #30363d;
+  margin-right: 0.2rem;
+  background-color: rgb(13, 17, 23);
+}
+.container__search input,
+.btn__search {
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+}
+.btn__search {
+  background-color: rgb(22, 27, 34);
+  border: 1px solid #30363d;
+  width: 6rem;
+  cursor: pointer;
+}
+.btn__search:hover {
+  background-color: #30363d;
+}
+.repositories h3 {
+  font-size: 20px;
+}
+.repositories h3,
+li {
+  border-bottom: 1px solid #30363d;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  list-style: none;
+}
+.repositories li a {
+  color: #58a6ff;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.repositorie_icon__container,
+.statics {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.4rem 0;
+}
+.container__description_stacks,
+.statics {
+  margin-left: 1.5rem;
+}
+.repositories h3,
+p {
+  color: white;
+}
+.repositories p {
+  line-height: 2rem;
+}
+
+.container__btn_prev_next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 5rem 0;
+}
+.container__previous,
+.container__next {
+  display: flex;
+  height: 1.3rem;
+  cursor: pointer;
+  min-width: 5rem;
+}
+.container__previous button,
+.container__next button {
+  background-color: transparent;
+  color: #58a6ff;
+  border: none;
+  cursor: pointer;
+  font-family: "Work Sans", sans-serif;
+}
+.container__next button {
+  padding-right: 0.5rem;
+}
+@media (max-width: 760px) {
+  .container__main {
+    max-width: 20rem;
+  }
+  .container__main h1 {
+    text-align: center;
+  }
+  .container__search {
+    padding: 2rem 0;
+    display: flex;
+  }
+  .container__search input {
+    min-width: 0.5rem;
+  }
+  p {
+    font-weight: 200;
+  }
+  .container__next button {
+    padding-left: 0.3rem;
+  }
+}

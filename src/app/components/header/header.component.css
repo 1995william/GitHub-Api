@@ -1,0 +1,26 @@
+.cabecalho__container {
+  padding: 1rem;
+  background-color: rgb(22,27,34);
+}
+.cabecalho__items {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.cabecalho__icone {
+  height: 2rem;
+}
+.cabecalho__titulo {
+  color: rgb(240,246,252);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+@media (max-width:760px) {
+  .cabecalho__items {
+    justify-content: center;
+  }
+  .cabecalho__titulo {
+    display: none;
+  }
+}
