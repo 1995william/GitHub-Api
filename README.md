@@ -62,6 +62,7 @@ $ ng test
 <li>Angular</li>
 <li>TypeScript</li>
 <li>Jasmine</li>
+<li>Vercel</li>
 
 </ul>
 
