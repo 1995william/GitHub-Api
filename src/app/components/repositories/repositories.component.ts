@@ -32,6 +32,11 @@ export class RepositoriesComponent implements OnInit {
     this.listRepositories();
   }
 
+// método search que executa a listRepositories
+ search() {
+  this.count = 1;
+  this.listRepositories();
+ }
   // método listRepositories que lista todos os dados da API retornado pelo getData
 
   listRepositories() {
@@ -42,7 +47,6 @@ export class RepositoriesComponent implements OnInit {
       .subscribe((repo) => {
         this.totalResults = `${repo.total_count} repository results`;
         this.repositories = repo.items;
-
       });
   }
 }
