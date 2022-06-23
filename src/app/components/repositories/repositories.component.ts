@@ -35,8 +35,10 @@ export class RepositoriesComponent implements OnInit {
   // método listRepositories que lista todos os dados da API retornado pelo getData
 
   listRepositories() {
+    const input = this.inputValue;
+    const count = this.count;
     this.githubService
-      .getData(this.inputValue, this.count)
+      .getData({input, count})
       .subscribe((repo) => {
         this.totalResults = `${repo.total_count} repository results`;
         this.repositories = repo.items;
