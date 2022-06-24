@@ -71,3 +71,8 @@ $ ng test
 # Desenvolvedor
 
 <p style="font-size: 15px">Rodrigo William</p>
+
+
+# Licença
+
+Este projeto esta sob licença MIT. Para mais detalhes clique <a href="./LICENSE">aqui</a>  
